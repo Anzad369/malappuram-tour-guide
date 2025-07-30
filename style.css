@@ -1,0 +1,357 @@
+/* Fonts and base */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fefdf9;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #034d4d;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+/* Hero */
+.hero {
+  background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  background: #f4d35e;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.hero-video-bg {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: 2;
+  text-align: center;
+  color: #f4d35e; /* Gold tone for traditional vibe */
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  font-family: 'Cairo', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay .btn {
+  margin-top: 40px; /* Increased margin to push button lower */
+}
+
+
+
+
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about {
+  background-color: #fffaf0;
+  border-top: 4px solid #034d4d;
+}
+
+.destinations .category {
+  margin-bottom: 40px;
+}
+
+.card-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f0f5f4;
+  padding: 20px;
+  border-left: 5px solid #0e5959;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Football Culture Enhancements */
+.fan-quote {
+  font-style: italic;
+  margin: 20px auto;
+  max-width: 600px;
+  background: rgba(255,255,255,0.1);
+  padding: 15px 20px;
+  border-left: 4px solid #f4d35e;
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.quote-author {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.video-link {
+  margin-top: 20px;
+}
+
+.video-link a {
+  background-color: #f4d35e;
+  color: #092b3f;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.video-link a:hover {
+  background-color: #ffd700;
+}
+
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #022d2d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.did-you-know {
+  background-color: #fef3c7;
+  border-left: 4px solid #eab308;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+/* Category Section Headings with Icons */
+.category-section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #034d4d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.destination-cards {
+  display: grid;
+  gap: 30px;
+}
+
+/* Card Container with Flex Layout */
+.destination-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f5f4;
+  border-left: 5px solid #0e5959;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 280px; /* Ensures consistent height */
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* Left Text Section */
+.destination-card .text-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.destination-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.destination-card .intro {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #475569;
+}
+
+.destination-card .details {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.destination-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #047857;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.destination-card a:hover {
+  text-decoration: underline;
+}
+
+/* Right Image Section */
+.destination-card .image-box {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.destination-card .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 8px 8px 0;
+}
+
+
+
+/* Events Section */
+.events .date-badge {
+  background: #f4d35e;
+  color: #000;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+
+.events .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/* Cuisine Cards with Hover Info */
+.food-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.food-card .hover-info {
+  display: none;
+  background-color: #d7f0ee;
+  color: #034d4d;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+
+.food-card:hover .hover-info {
+  display: block;
+}
+.cuisine .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
