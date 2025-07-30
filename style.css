@@ -15,19 +15,76 @@ h1, h2, h3, h4 {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
   background-color: #034d4d;
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
+  font-family: 'Cairo', sans-serif;
 }
 
-.navbar a {
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar .nav-links a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem;
+  margin: 0 0.8rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
+
+.navbar .nav-links a:hover {
+  color: #ffc107;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #034d4d;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+}
+
 
 /* Hero */
 .hero {
