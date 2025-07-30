@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malappuram Tour Guide</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Malappuram</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#events">Events</a>
+        <a href="#cuisine">Cuisine</a>
+        <a href="#football-culture">Football</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero hero-video-bg">
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/EUJZdLOC6qU?autoplay=1&mute=1&loop=1&playlist=EUJZdLOC6qU&controls=0&modestbranding=1&showinfo=0"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+      <div class="hero-overlay">
+        <h1>Discover the Heart of Malappuram</h1>
+        <p>Where culture, nature, and football collide</p>
+        <a href="#about" class="btn">Explore Now</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div
+        class="about-content"
+        style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px"
+      >
+        <div class="about-image" style="flex: 1 1 300px">
+          <img
+            src="assets/malappuram-about.jpg"
+            alt="Malappuram Scenery"
+            style="width: 100%; border-radius: 8px"
+          />
+        </div>
+
+        <div class="about-text" style="flex: 2 1 400px">
+          <h2>About Malappuram</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8">
+            Malappuram, gracefully spread between the majestic Western Ghats and
+            the serene Arabian Sea, is a district that breathes history,
+            culture, and unmatched spirit. It’s a land where the pulse of
+            tradition echoes in the sounds of <strong>Mappila songs</strong>,
+            the grandeur of historic <strong>mosques and temples</strong>, and
+            the energy of
+            <strong>football grounds filled with roaring fans</strong>. Often
+            called the <em>‘Football Capital of Kerala’</em>, Malappuram’s love
+            for the game isn’t just a pastime — it’s an emotion stitched into
+            everyday life. From the Nercha festivals to boat races at Biyyam
+            Kayal, every event here carries the essence of its diverse
+            communities. Explore its
+            <strong>scenic hills, sacred sites, bustling towns</strong>, and the
+            warmth of people rooted in art, poetry, and resilience. Whether
+            you're a history buff, nature lover, or someone chasing the thrill
+            of a local football match, Malappuram will welcome you with open
+            arms and leave a lasting impression.
+          </p>
+
+          <div class="did-you-know">
+            Did you know Malappuram has the most number of public libraries in
+            Kerala?
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destinations" class="section destinations" data-aos="fade-up">
+      <h2>Top Destinations in Malappuram</h2>
+
+      <!-- Heritage & Religious Sites -->
+      <div class="category-section">
+        <h3><i class="fas fa-mosque"></i> Heritage & Religious Sites</h3>
+        <div class="destination-cards">
+          <div class="destination-card">
+            <div class="text-content">
+              <h4>Pazhayangadi Mosque</h4>
+              <p class="intro">
+                A centuries-old mosque with rich architecture and spiritual
+                relevance.
+              </p>
+              <div class="details">
+                <p>
+                  Known for its blend of Kerala and Persian styles, this mosque
+                  is a hub of learning and tradition in Malappuram.
+                </p>
+                <a href="https://goo.gl/maps/Zxyz..." target="_blank"
+                  >View on Google Maps</a
+                >
+              </div>
+            </div>
+            <div class="image-box">
+              <img src="assets/pazhayangadi.jpg" alt="Pazhayangadi Mosque" />
+            </div>
+          </div>
+
+          <!-- Add more heritage cards here -->
+        </div>
+      </div>
+
+      <!-- Nature & Scenic Spots -->
+      <div class="category-section">
+        <h3><i class="fas fa-tree"></i> Nature & Scenic Spots</h3>
+        <div class="destination-cards">
+          <div class="destination-card">
+            <div class="text-content">
+              <h4>Kottakkunnu</h4>
+              <p class="intro">
+                A historic hill garden offering panoramic views and cultural
+                events.
+              </p>
+              <div class="details">
+                <p>
+                  This scenic spot offers breathtaking views, an open-air
+                  theater, and food stalls, making it a favorite family
+                  destination.
+                </p>
+                <a href="https://goo.gl/maps/Abcd..." target="_blank"
+                  >View on Google Maps</a
+                >
+              </div>
+            </div>
+            <div class="image-box">
+              <img src="assets/kottakkunnu.jpg" alt="Kottakkunnu" />
+            </div>
+          </div>
+
+          <!-- Add more nature cards here -->
+        </div>
+      </div>
+
+      <!-- Museums & Educational Attractions -->
+      <div class="category-section">
+        <h3>
+          <i class="fas fa-landmark"></i> Museums & Educational Attractions
+        </h3>
+        <div class="destination-cards">
+          <div class="destination-card">
+            <div class="text-content">
+              <h4>Kottakkal Arya Vaidya Sala Museum</h4>
+              <p class="intro">
+                Preserving the legacy of Ayurveda and Kerala’s healing
+                traditions.
+              </p>
+              <div class="details">
+                <p>
+                  This museum showcases ancient ayurvedic tools, manuscripts,
+                  and the rich history of Kottakkal’s contribution to medicine.
+                </p>
+                <a href="https://goo.gl/maps/Pqrs..." target="_blank"
+                  >View on Google Maps</a
+                >
+              </div>
+            </div>
+            <div class="image-box">
+              <img src="assets/arya-vaidya.jpg" alt="Arya Vaidya Sala Museum" />
+            </div>
+          </div>
+
+          <!-- Add more museum cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Events & Festivals -->
+    <section id="events" class="section events" data-aos="fade-up">
+      <h2>Events & Festivals</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="assets/biyyam-boat-race.jpg" alt="Biyyam Boat Race" />
+          <h3>Biyyam Boat Race <span class="date-badge">August</span></h3>
+          <p>
+            Held at Biyyam Kayal in Ponnani, this vibrant boat race is a visual
+            spectacle celebrating Malappuram’s connection to water and
+            tradition.
+          </p>
+        </div>
+        <div class="card">
+          <img src="assets/mamankam.jpg" alt="Mamankam Festival" />
+          <h3>Mamankam Festival <span class="date-badge">Historic</span></h3>
+          <p>
+            Though no longer celebrated, Mamankam on the banks of Bharathapuzha
+            remains a legendary part of Malappuram’s past — a grand festival of
+            warriors and legacy.
+          </p>
+        </div>
+        <div class="card">
+          <img src="assets/nercha.jpg" alt="Malappuram Nercha" />
+          <h3>Malappuram Nercha <span class="date-badge">March–April</span></h3>
+          <p>
+            A unique Islamic festival involving processions, offerings, and
+            traditional music, Nercha is an emotional, spiritual gathering tied
+            to Malabar’s soul.
+          </p>
+        </div>
+        <div class="card">
+          <img src="assets/mappila-pattu.jpg" alt="Mappila Paattu Evenings" />
+          <h3>
+            Mappila Paattu Evenings <span class="date-badge">All Year</span>
+          </h3>
+          <p>
+            Cultural nights featuring traditional Mappila songs, often during
+            religious or community gatherings, showcasing lyrical heritage and
+            history.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Local Cuisine -->
+    <section id="cuisine" class="section cuisine" data-aos="fade-up">
+      <h2>Local Cuisine</h2>
+      <div class="card-grid">
+        <div class="card food-card">
+          <img src="assets/malabar-biryani.jpg" alt="Malabar Biryani" />
+          <h3>Malabar Biryani</h3>
+          <p>Available at: <strong>Rahmath Hotel, Paragon</strong></p>
+          <div class="hover-info">
+            Flavored rice with marinated meat, fried onions, and Kerala spices.
+          </div>
+        </div>
+        <div class="card food-card">
+          <img src="assets/kuzhi-mandi.jpg" alt="Kuzhi Mandi" />
+          <h3>Kuzhi Mandi</h3>
+          <p>Available at: <strong>Mandi Hut, BBQ Town</strong></p>
+          <div class="hover-info">
+            Slow-cooked meat over spiced rice, often served with chutneys and
+            mayo dips.
+          </div>
+        </div>
+        <div class="card food-card">
+          <img src="assets/pathiri-chicken.jpg" alt="Pathiri & Chicken Curry" />
+          <h3>Pathiri & Chicken Curry</h3>
+          <p>Available at: <strong>Tharavad, Mappila Bhavan</strong></p>
+          <div class="hover-info">
+            Soft rice flatbreads paired with rich, spicy chicken curry cooked
+            Mappila-style.
+          </div>
+        </div>
+        <div class="card food-card">
+          <img src="assets/unnakaya.jpg" alt="Unnakaya" />
+          <h3>Unnakaya</h3>
+          <p>Available at: <strong>Local bakeries and homes</strong></p>
+          <div class="hover-info">
+            Fried banana stuffed with coconut, jaggery, and cardamom — a sweet
+            tradition.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Football Culture -->
+    <section id="football-culture" class="section football" data-aos="fade-up">
+      <h2>Football Culture in Malappuram</h2>
+      <p>
+        Football isn’t just a sport here — it’s a pulse, a lifestyle, and an
+        unspoken language of unity and fire.
+      </p>
+
+      <blockquote class="fan-quote">
+        "In Malappuram, kids don't learn to walk — they learn to dribble."
+        <span class="quote-author">– Local Coach, Kottakkal</span>
+      </blockquote>
+
+      <div class="timeline">
+        <div class="event">
+          <h4>Sevens Football</h4>
+          <p>
+            Locally organized 7-a-side matches fill the nights with cheering
+            crowds and raw talent. It's the soul of grassroots football in
+            Malabar.
+          </p>
+        </div>
+        <div class="event">
+          <h4>Malappuram District League</h4>
+          <p>
+            A breeding ground for Kerala’s best — players rise from dusty fields
+            to I-League and ISL trials.
+          </p>
+        </div>
+        <div class="event">
+          <h4>Community Tournaments</h4>
+          <p>
+            Every town has its tournament. Whether it’s Kottappadi or Manjeri,
+            football festivals unite everyone from school kids to grandmothers.
+          </p>
+        </div>
+      </div>
+
+      <div class="video-link">
+        <a
+          href="https://www.instagram.com/reel/DGisJ_Up66P/?igsh=MWEyb24yaDZrNzhkaw=="
+          target="_blank"
+        >
+          Watch Reel on Instagram
+        </a>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section gallery" data-aos="fade-up">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="assets/mosque.jpg" alt="Mosque" />
+        <img src="assets/ooty.jpg" alt="Mini Ooty" />
+        <img src="assets/football.jpg" alt="Football crowd" />
+        <img src="assets/food.jpg" alt="Local cuisine" />
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Malappuram Tour Guide | Designed with tradition & passion</p>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
